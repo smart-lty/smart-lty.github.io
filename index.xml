@@ -1,37 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>HomePage of Smart-LTY</title>
+    <title>HomePage of Tianyu Liu</title>
     <link>https://smart-lty.github.io/</link>
-    <description>Recent content on HomePage of Smart-LTY</description>
+    <description>Recent content on HomePage of Tianyu Liu</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 31 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://smart-lty.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 20 Aug 2022 22:33:26 +0800</lastBuildDate><atom:link href="https://smart-lty.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Personal Statement</title>
-      <link>https://smart-lty.github.io/post/ps/</link>
-      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
+      <title>About Me</title>
+      <link>https://smart-lty.github.io/about/</link>
+      <pubDate>Sat, 20 Aug 2022 21:17:21 +0800</pubDate>
       
-      <guid>https://smart-lty.github.io/post/ps/</guid>
-      <description>&lt;p&gt;走过路过不要错过！= =&lt;/p&gt;</description>
+      <guid>https://smart-lty.github.io/about/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>杂谈其一</title>
-      <link>https://smart-lty.github.io/post/22-03-31/</link>
-      <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
+      <title>经验贴：从0开始搭建个人主页</title>
+      <link>https://smart-lty.github.io/tech/site_create/</link>
+      <pubDate>Sat, 20 Aug 2022 22:33:26 +0800</pubDate>
       
-      <guid>https://smart-lty.github.io/post/22-03-31/</guid>
-      <description>&lt;p&gt;当生活没有像你想象中的那样进行，你会怎么做？&lt;/p&gt;</description>
+      <guid>https://smart-lty.github.io/tech/site_create/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Git 使用中踩的一个大坑</title>
-      <link>https://smart-lty.github.io/post/22-03-30/</link>
-      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      <title>目前科研方向介绍</title>
+      <link>https://smart-lty.github.io/research/intro/</link>
+      <pubDate>Sat, 20 Aug 2022 22:30:34 +0800</pubDate>
       
-      <guid>https://smart-lty.github.io/post/22-03-30/</guid>
-      <description>&lt;p&gt;git真的能让人血压拉满呜呜呜&lt;/p&gt;</description>
+      <guid>https://smart-lty.github.io/research/intro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2019-10 小诗一首</title>
+      <link>https://smart-lty.github.io/life/22-08-20/</link>
+      <pubDate>Sat, 19 Oct 2019 00:56:22 +0800</pubDate>
+      
+      <guid>https://smart-lty.github.io/life/22-08-20/</guid>
+      <description></description>
     </item>
     
   </channel>

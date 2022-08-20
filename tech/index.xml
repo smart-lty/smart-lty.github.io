@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teches on HomePage of Tianyu Liu</title>
+    <link>https://smart-lty.github.io/tech/</link>
+    <description>Recent content in Teches on HomePage of Tianyu Liu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 20 Aug 2022 22:33:26 +0800</lastBuildDate><atom:link href="https://smart-lty.github.io/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>经验贴：从0开始搭建个人主页</title>
+      <link>https://smart-lty.github.io/tech/site_create/</link>
+      <pubDate>Sat, 20 Aug 2022 22:33:26 +0800</pubDate>
+      
+      <guid>https://smart-lty.github.io/tech/site_create/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

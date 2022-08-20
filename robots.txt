@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://smart-lty.github.io/sitemap.xml

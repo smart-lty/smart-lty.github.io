@@ -1,64 +1,72 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml-stylesheet type="text/xsl" href="https://smart-lty.github.io/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://smart-lty.github.io/post/ps/</loc>
-    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://smart-lty.github.io/post/22-03-31/</loc>
-    <lastmod>2022-03-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://smart-lty.github.io/post/22-03-30/</loc>
-    <lastmod>2022-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://smart-lty.github.io/categories/</loc>
-    <lastmod>2022-03-31T00:00:00+00:00</lastmod>
+    <loc>https://smart-lty.github.io/about/</loc>
+    <lastmod>2022-08-20T21:17:21+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://smart-lty.github.io/</loc>
-    <lastmod>2022-03-31T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-20T22:33:26+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://smart-lty.github.io/post/</loc>
-    <lastmod>2022-03-31T00:00:00+00:00</lastmod>
+    <loc>https://smart-lty.github.io/tech/</loc>
+    <lastmod>2022-08-20T22:33:26+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://smart-lty.github.io/tags/project/</loc>
-    <lastmod>2022-03-31T00:00:00+00:00</lastmod>
+    <loc>https://smart-lty.github.io/tech/site_create/</loc>
+    <lastmod>2022-08-20T22:33:26+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://smart-lty.github.io/categories/project/</loc>
-    <lastmod>2022-03-31T00:00:00+00:00</lastmod>
+    <loc>https://smart-lty.github.io/research/</loc>
+    <lastmod>2022-08-20T22:30:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://smart-lty.github.io/research/intro/</loc>
+    <lastmod>2022-08-20T22:30:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://smart-lty.github.io/life/22-08-20/</loc>
+    <lastmod>2019-10-19T00:56:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://smart-lty.github.io/life/</loc>
+    <lastmod>2019-10-19T00:56:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://smart-lty.github.io/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://smart-lty.github.io/tags/</loc>
-    <lastmod>2022-03-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://smart-lty.github.io/tags/statement/</loc>
-    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://smart-lty.github.io/categories/statement/</loc>
-    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://smart-lty.github.io/archives/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
 </urlset>

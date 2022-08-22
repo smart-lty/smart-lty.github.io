@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="smart-lty" /><meta name="description" content="" />
+<meta name="author" content="smart-lty" /><meta name="description" content="经验贴：从0开始搭建个人主页" />
 
 
 
@@ -40,23 +40,23 @@
 
 
 <meta property="og:title" content="经验贴：从0开始搭建个人主页" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="经验贴：从0开始搭建个人主页" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://smart-lty.github.io/tech/site_create/" />
 <meta property="article:published_time" content="2022-08-20T22:33:26+08:00" />
 <meta property="article:modified_time" content="2022-08-20T22:33:26+08:00" />
 <meta itemprop="name" content="经验贴：从0开始搭建个人主页">
-<meta itemprop="description" content="">
+<meta itemprop="description" content="经验贴：从0开始搭建个人主页">
 <meta itemprop="datePublished" content="2022-08-20T22:33:26+08:00" />
 <meta itemprop="dateModified" content="2022-08-20T22:33:26+08:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="wordCount" content="2697">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="经验贴：从0开始搭建个人主页"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="经验贴：从0开始搭建个人主页"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -132,7 +132,184 @@
         <div id="content" class="content">
           <article class="post">
   <div class="post-content">
-    
+    <h1 id="经验贴从0开始搭建个人主页">经验贴：从0开始搭建个人主页</h1>
+<div style="font-size:15px; line-height: 2em">
+<div style="font-size:25px; color:#E5816C">〇、搭建框架 Hugo 介绍</div>
+<p>Hugo是一个十分好用的、搭建静态网页的框架。所谓的静态网页，在我的理解中就是访问次数远大于编辑次数的网页，此类网页常见于一些介绍性质的主页。因而，Hugo很适合用来搭建个人主页。</p>
+<p>在开始阅读本博客之前，您可以按照您的需求完成以下事情：</p>
+<ul>
+<li>阅读Hugo官方的<a href="https://www.gohugo.org/">教程</a>。官方教程会比较简略，且无法满足一些客制化需求。</li>
+<li>如果您想要深入了解Hugo的工作原理，请访问此<a href="https://hugo.aiaide.com/post/hugo%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/">连接</a>。了解Hugo的工作原理可以帮助您在定制个人主页时，更方便的按照您的需求来修改代码，这一点是比较重要的！这是因为目前Hugo的相关博客并不多，内容大多鱼龙混杂，有时难以找到有效信息。这种时候，了解hugo的工作原理可能帮助您更准确地完成目标。</li>
+</ul>
+<div style="font-size:25px; color:#E5816C">一、Hugo安装及环境配置</div>
+<p>hugo官网已经给出了详细的安装方案，这里就不赘述了。<a href="https://www.gohugo.org/doc/overview/installing/">安装教程</a></p>
+<blockquote>
+<p>强烈推荐大家在linux系统上安装hugo并配置环境</p>
+</blockquote>
+<div style="font-size:25px; color:#E5816C">二、创建一个示例</div>
+<p>安装好hugo之后，我们首先可以通过一行简单的命令<code>hugo new site site_case</code> 来快速创建一个空网站。</p>
+<p><img src="https://s2.loli.net/2022/08/22/SuXrUOoGWVw7BYQ.png" alt="image.png"></p>
+<p>此时一个独属于你的个人主页就创建好啦！接下来可以选取一个你喜欢的模板，将模板嵌套在你的个人主页中。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> site_case
+
+<span class="c1"># 此处以even模板为例</span>
+git clone https://github.com/olOwOlo/hugo-theme-even themes/even
+
+cp themes/even/exampleSite/config.toml config.toml
+</code></pre></td></tr></table>
+</div>
+</div><p>此时文件的目录树如下：</p>
+<p><img src="https://raw.githubusercontent.com/smart-lty/pictures/master/202208221629551.png" alt="image-20220822162915545"></p>
+<p>到这一步，我们就可以启动server，看看目前的效果啦！</p>
+<p>服务器上输入:
+<code>hugo server --disableFastRender --i18n-warnings --bind localhost -p 23456</code></p>
+<p>本地powershell输入：
+<code>ssh -N -L localhost:5942:localhost:23456 {username}@{server_ip} -p {port}</code></p>
+<p>浏览器输入网址：
+<code>localhost:5942</code></p>
+<p>样例：
+<img src="https://raw.githubusercontent.com/smart-lty/pictures/master/202208221633433.png" alt="image-20220822163310655"></p>
+<div style="font-size:25px; color:#E5816C">三、原理解读</div>
+<p>此部分是我对hugo使用的一些理解~</p>
+<p>OK，让我们从<code>hugo new site</code>这里开始解读。</p>
+<p>首先我们可以看到，<code>hugo new site site_case</code>这一行命令生成的文件树如下：</p>
+<ul>
+<li>archetypes：通常情况下这个文件夹是不重要的= =（有时可以保存一些默认的模板，不过对于新手来说了解的越少越容易理解）</li>
+<li>content：此处存储了你要显示的所有文章。在content目录下也可以创建多个文件夹，用来归类各类文章。</li>
+<li>data：暂时用不到~</li>
+<li>layouts：暂时用不到~</li>
+<li>resources：暂时用不到~</li>
+<li>static：此处可以存储要使用的一些图片或者视频等静态资源。例如，我们可以把要使用的图片存储于<code>static/images/test.png</code>。注意，存储的图片在使用时使用的路径并不是<code>static/images/test.png</code>而是<code>images/test.png</code>，后面会给解释。</li>
+<li>themes：此处存储了你要使用的主题模板。</li>
+<li>config.toml：整个网站的相关配置。</li>
+</ul>
+<p>在了解了各个文件夹都是什么作用了之后，我们来说一说hugo是如何把所写的文章转换成网页的（即hugo命令）。首先概括一下流程：</p>
+<p>用户撰写文章 -&gt; hugo编译<code>config.toml</code>和模板中的相关文件为html文件 -&gt; hugo将静态资源（<code>static/</code>）与用户撰写文章链接起来，并编译成html文件 -&gt; 将以上这些html文件组织起来，形成个人网站</p>
+<ul>
+<li>用户撰写文章：用户使用markdown及html撰写文章。hugo通过其独特的shortcode理解用户文章，并进行编译。</li>
+<li>hugo编译<code>config.toml</code>和模板中的相关文件为html文件：首先，<code>site_case/config.toml</code>中保存了所搭建网站的各种信息，hugo会根据这些信息来决定所生成网页的一些特性。然后，模板中也会有一些相关文件。例如，<code>themes/even/layouts/index.html</code>中便写明了<code>even</code>这个主题在进入主页面时所显示的html结构。hugo会将以上信息组织起来，生成用户定制的主题效果。</li>
+<li>hugo将静态资源（<code>static/</code>）与用户撰写文章链接起来，并编译成html文件：使用<code>hugo</code>命令时，hugo会生成<code>public</code>文件夹。事实上，仅<code>public</code>文件夹用于构建主页。上述的两步编译好的结果均会存储到<code>public</code>文件夹中。而<code>static/</code>路径下的所有文件夹，都会直接被编译到<code>public</code>中。例如，<code>static/images/test.png</code>在编译后的路径就是<code>images/test.png</code>（以<code>public</code>为根路径）。因此，我们在文章里引用图片路径时，要使用后者才能正确显示。</li>
+<li>将以上这些html文件组织起来，形成个人网站：将生成html文件在浏览器打开，以便浏览。</li>
+</ul>
+<div style="font-size:25px; color:#E5816C">四、一些客制化需求</div>
+<p>一些简单的客制化需求例如写博客、在<code>config.toml</code>中修改个人信息等，都已在hugo的官方教程中给出。这里我简单描述一下一些特殊的客制化需求。</p>
+<div style="font-size:20px; color:#29A69D">menu重排列</div>
+<p>大家可以先看一下我的个人主页的menu，和主题中内置的menu是不太一样的，那如何实现这样的效果呢？</p>
+<p><img src="https://raw.githubusercontent.com/smart-lty/pictures/master/202208221659108.png" alt="image-20220822165921150"></p>
+<p>首先，我们可以在<code>config.toml</code>中找到与menu相关的一些配置。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="o">[[</span>menu.main<span class="o">]]</span>             <span class="c1"># config your menu              # 配置目录</span>
+  <span class="nv">name</span> <span class="o">=</span> <span class="s2">&#34;主页&#34;</span>
+  <span class="nv">weight</span> <span class="o">=</span> <span class="m">10</span>
+  <span class="nv">identifier</span> <span class="o">=</span> <span class="s2">&#34;主页&#34;</span>
+  <span class="nv">url</span> <span class="o">=</span> <span class="s2">&#34;/&#34;</span>
+<span class="o">[[</span>menu.main<span class="o">]]</span>
+  <span class="nv">name</span> <span class="o">=</span> <span class="s2">&#34;生活&#34;</span>
+  <span class="nv">weight</span> <span class="o">=</span> <span class="m">20</span>
+  <span class="nv">identifier</span> <span class="o">=</span> <span class="s2">&#34;生活&#34;</span>
+  <span class="nv">url</span> <span class="o">=</span> <span class="s2">&#34;/life/&#34;</span>
+<span class="o">[[</span>menu.main<span class="o">]]</span>
+  <span class="nv">name</span> <span class="o">=</span> <span class="s2">&#34;科研&#34;</span>
+  <span class="nv">weight</span> <span class="o">=</span> <span class="m">30</span>
+  <span class="nv">identifier</span> <span class="o">=</span> <span class="s2">&#34;科研&#34;</span>
+  <span class="nv">url</span> <span class="o">=</span> <span class="s2">&#34;/research/&#34;</span>
+<span class="o">[[</span>menu.main<span class="o">]]</span>
+  <span class="nv">name</span> <span class="o">=</span> <span class="s2">&#34;技术&#34;</span>
+  <span class="nv">weight</span> <span class="o">=</span> <span class="m">40</span>
+  <span class="nv">identifier</span> <span class="o">=</span> <span class="s2">&#34;技术&#34;</span>
+  <span class="nv">url</span> <span class="o">=</span> <span class="s2">&#34;/tech/&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>此处config中，<code>name</code>即要在menu中所显示的按钮的名称，<code>weight</code>控制各按钮的排列顺序，而注意<code>url</code>是以<code>content/</code>为base url的，<code>/life/</code>等皆为<code>content</code>中的文件夹。</p>
+<blockquote>
+<p>在尝试之后朋友们会发现，以这种形式创建的按钮，只能指向一个文章列表。如果我们想制作一个单独的<code>about</code>页面来介绍自己，该如何进行呢？</p>
+</blockquote>
+<p>答案很简单，我们只需要在<code>content</code>下创建一个单独的<code>about.md</code>文件即可。当然，我们需要加一些设置= =</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">menu: &#34;main&#34;
+weight: 5
+</code></pre></td></tr></table>
+</div>
+</div><div style="font-size:20px; color:#29A69D">主页重定向</div>
+<p>如果不想让用户点进主页就是一个最近文章列表，而指向一个单独的页面，该怎么办呢？</p>
+<p>一个很自然的想法是，仿照上面<code>About Me</code>的写法，单独创建一个markdown文件用来控制这个页面。但很可惜，这样做并不行，并且会带来一系列的问题。</p>
+<p>此部分可以说比较困难了，我也花了比较多的时间，后续有空再更新这篇文章。大家感兴趣的话可以在About Me页面中添加我的联系方式 0.0</p>
+<div style="font-size:25px; color:#E5816C">五、部署</div>
+<p>在定制自己的个人主页之后，最激动的时刻来了！我们要将个人主页进行部署，这样就可以通过互联网进行访问。此部分已有很多经验贴，下面列举一个：<a href="https://jeshs.github.io/2019/01/hugo%E9%83%A8%E7%BD%B2%E5%88%B0github/">Hugo部署到Github</a></p>
+<p>我自己撰写了一个部署脚本，希望对大家有帮助：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 添加代理</span>
+<span class="nb">export</span> <span class="nv">http_proxy</span><span class="o">=</span>http://192.168.16.5:3128
+<span class="nb">export</span> <span class="nv">https_proxy</span><span class="o">=</span>http://192.168.16.5:3128
+
+<span class="c1"># 重新生成public文件夹</span>
+rm -rf public
+git clone https://github.com/<span class="o">{</span>username<span class="o">}</span>/<span class="o">{</span>username<span class="o">}</span>.github.io.git public
+hugo -D
+
+<span class="c1"># 上传到github</span>
+<span class="nb">cd</span> public
+git add .
+git commit -m<span class="s2">&#34;update&#34;</span>
+git push origin master
+</code></pre></td></tr></table>
+</div>
+</div><p>HINT: 记得打开github仓库中的action选项哦~</p>
   </div>
 </article>
         </div>

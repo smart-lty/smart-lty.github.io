@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.76.4 with theme even" />
+<meta name="generator" content="Hugo 0.101.0 with theme even" />
 
 
 <link rel="canonical" href="https://smart-lty.github.io/tech/site_create/" />
@@ -42,19 +42,15 @@
 <meta property="og:title" content="经验贴：从0开始搭建个人主页" />
 <meta property="og:description" content="经验贴：从0开始搭建个人主页" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://smart-lty.github.io/tech/site_create/" />
+<meta property="og:url" content="https://smart-lty.github.io/tech/site_create/" /><meta property="article:section" content="tech" />
 <meta property="article:published_time" content="2022-08-20T22:33:26+08:00" />
 <meta property="article:modified_time" content="2022-08-20T22:33:26+08:00" />
+
 <meta itemprop="name" content="经验贴：从0开始搭建个人主页">
-<meta itemprop="description" content="经验贴：从0开始搭建个人主页">
-<meta itemprop="datePublished" content="2022-08-20T22:33:26+08:00" />
+<meta itemprop="description" content="经验贴：从0开始搭建个人主页"><meta itemprop="datePublished" content="2022-08-20T22:33:26+08:00" />
 <meta itemprop="dateModified" content="2022-08-20T22:33:26+08:00" />
 <meta itemprop="wordCount" content="2697">
-
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="经验贴：从0开始搭建个人主页"/>
 <meta name="twitter:description" content="经验贴：从0开始搭建个人主页"/>
 
@@ -152,7 +148,7 @@
 <p>此时一个独属于你的个人主页就创建好啦！接下来可以选取一个你喜欢的模板，将模板嵌套在你的个人主页中。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -160,13 +156,13 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> site_case
-
-<span class="c1"># 此处以even模板为例</span>
-git clone https://github.com/olOwOlo/hugo-theme-even themes/even
-
-cp themes/even/exampleSite/config.toml config.toml
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> site_case
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 此处以even模板为例</span>
+</span></span><span class="line"><span class="cl">git clone https://github.com/olOwOlo/hugo-theme-even themes/even
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cp themes/even/exampleSite/config.toml config.toml
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>此时文件的目录树如下：</p>
 <p><img src="https://raw.githubusercontent.com/smart-lty/pictures/master/202208221629551.png" alt="image-20220822162915545"></p>
@@ -209,7 +205,7 @@ cp themes/even/exampleSite/config.toml config.toml
 <p>首先，我们可以在<code>config.toml</code>中找到与menu相关的一些配置。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -231,27 +227,27 @@ cp themes/even/exampleSite/config.toml config.toml
 </span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="o">[[</span>menu.main<span class="o">]]</span>             <span class="c1"># config your menu              # 配置目录</span>
-  <span class="nv">name</span> <span class="o">=</span> <span class="s2">&#34;主页&#34;</span>
-  <span class="nv">weight</span> <span class="o">=</span> <span class="m">10</span>
-  <span class="nv">identifier</span> <span class="o">=</span> <span class="s2">&#34;主页&#34;</span>
-  <span class="nv">url</span> <span class="o">=</span> <span class="s2">&#34;/&#34;</span>
-<span class="o">[[</span>menu.main<span class="o">]]</span>
-  <span class="nv">name</span> <span class="o">=</span> <span class="s2">&#34;生活&#34;</span>
-  <span class="nv">weight</span> <span class="o">=</span> <span class="m">20</span>
-  <span class="nv">identifier</span> <span class="o">=</span> <span class="s2">&#34;生活&#34;</span>
-  <span class="nv">url</span> <span class="o">=</span> <span class="s2">&#34;/life/&#34;</span>
-<span class="o">[[</span>menu.main<span class="o">]]</span>
-  <span class="nv">name</span> <span class="o">=</span> <span class="s2">&#34;科研&#34;</span>
-  <span class="nv">weight</span> <span class="o">=</span> <span class="m">30</span>
-  <span class="nv">identifier</span> <span class="o">=</span> <span class="s2">&#34;科研&#34;</span>
-  <span class="nv">url</span> <span class="o">=</span> <span class="s2">&#34;/research/&#34;</span>
-<span class="o">[[</span>menu.main<span class="o">]]</span>
-  <span class="nv">name</span> <span class="o">=</span> <span class="s2">&#34;技术&#34;</span>
-  <span class="nv">weight</span> <span class="o">=</span> <span class="m">40</span>
-  <span class="nv">identifier</span> <span class="o">=</span> <span class="s2">&#34;技术&#34;</span>
-  <span class="nv">url</span> <span class="o">=</span> <span class="s2">&#34;/tech/&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="o">[[</span>menu.main<span class="o">]]</span>             <span class="c1"># config your menu              # 配置目录</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">name</span> <span class="o">=</span> <span class="s2">&#34;主页&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">weight</span> <span class="o">=</span> <span class="m">10</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">identifier</span> <span class="o">=</span> <span class="s2">&#34;主页&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">url</span> <span class="o">=</span> <span class="s2">&#34;/&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[[</span>menu.main<span class="o">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">name</span> <span class="o">=</span> <span class="s2">&#34;生活&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">weight</span> <span class="o">=</span> <span class="m">20</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">identifier</span> <span class="o">=</span> <span class="s2">&#34;生活&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">url</span> <span class="o">=</span> <span class="s2">&#34;/life/&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[[</span>menu.main<span class="o">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">name</span> <span class="o">=</span> <span class="s2">&#34;科研&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">weight</span> <span class="o">=</span> <span class="m">30</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">identifier</span> <span class="o">=</span> <span class="s2">&#34;科研&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">url</span> <span class="o">=</span> <span class="s2">&#34;/research/&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[[</span>menu.main<span class="o">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">name</span> <span class="o">=</span> <span class="s2">&#34;技术&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">weight</span> <span class="o">=</span> <span class="m">40</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">identifier</span> <span class="o">=</span> <span class="s2">&#34;技术&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">url</span> <span class="o">=</span> <span class="s2">&#34;/tech/&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>此处config中，<code>name</code>即要在menu中所显示的按钮的名称，<code>weight</code>控制各按钮的排列顺序，而注意<code>url</code>是以<code>content/</code>为base url的，<code>/life/</code>等皆为<code>content</code>中的文件夹。</p>
 <blockquote>
@@ -260,13 +256,13 @@ cp themes/even/exampleSite/config.toml config.toml
 <p>答案很简单，我们只需要在<code>content</code>下创建一个单独的<code>about.md</code>文件即可。当然，我们需要加一些设置= =</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown">menu: &#34;main&#34;
-weight: 5
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">menu: &#34;main&#34;
+</span></span><span class="line"><span class="cl">weight: 5
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div style="font-size:20px; color:#29A69D">主页重定向</div>
 <p>如果不想让用户点进主页就是一个最近文章列表，而指向一个单独的页面，该怎么办呢？</p>
@@ -277,7 +273,7 @@ weight: 5
 <p>我自己撰写了一个部署脚本，希望对大家有帮助：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -293,21 +289,21 @@ weight: 5
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 添加代理</span>
-<span class="nb">export</span> <span class="nv">http_proxy</span><span class="o">=</span>http://192.168.16.5:3128
-<span class="nb">export</span> <span class="nv">https_proxy</span><span class="o">=</span>http://192.168.16.5:3128
-
-<span class="c1"># 重新生成public文件夹</span>
-rm -rf public
-git clone https://github.com/<span class="o">{</span>username<span class="o">}</span>/<span class="o">{</span>username<span class="o">}</span>.github.io.git public
-hugo -D
-
-<span class="c1"># 上传到github</span>
-<span class="nb">cd</span> public
-git add .
-git commit -m<span class="s2">&#34;update&#34;</span>
-git push origin master
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 添加代理</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">http_proxy</span><span class="o">=</span>http://192.168.16.5:3128
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">https_proxy</span><span class="o">=</span>http://192.168.16.5:3128
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 重新生成public文件夹</span>
+</span></span><span class="line"><span class="cl">rm -rf public
+</span></span><span class="line"><span class="cl">git clone https://github.com/<span class="o">{</span>username<span class="o">}</span>/<span class="o">{</span>username<span class="o">}</span>.github.io.git public
+</span></span><span class="line"><span class="cl">hugo -D
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 上传到github</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> public
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m<span class="s2">&#34;update&#34;</span>
+</span></span><span class="line"><span class="cl">git push origin master
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>HINT: 记得打开github仓库中的action选项哦~</p>
   </div>
@@ -357,7 +353,7 @@ git push origin master
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
   <script type="text/javascript">
     window.MathJax = {
       tex: {

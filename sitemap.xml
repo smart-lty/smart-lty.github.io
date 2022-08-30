@@ -9,8 +9,22 @@
   </url>
   
   <url>
+    <loc>https://smart-lty.github.io/research/knowledge_graph/</loc>
+    <lastmod>2022-08-30T22:29:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://smart-lty.github.io/</loc>
-    <lastmod>2022-08-25T22:04:02+08:00</lastmod>
+    <lastmod>2022-08-30T22:29:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://smart-lty.github.io/research/</loc>
+    <lastmod>2022-08-30T22:29:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -46,13 +60,6 @@
   <url>
     <loc>https://smart-lty.github.io/tech/site_create/</loc>
     <lastmod>2022-08-20T22:33:26+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://smart-lty.github.io/research/</loc>
-    <lastmod>2022-08-20T22:30:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

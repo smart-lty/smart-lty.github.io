@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>归档 - HomePage of Tianyu Liu</title>
+  <title>DRUM阅读笔记 - HomePage of Tianyu Liu</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="smart-lty" />
+<meta name="author" content="smart-lty" /><meta name="description" content="" />
 
 
 
@@ -26,9 +26,7 @@
 <meta name="generator" content="Hugo 0.95.0 with theme even" />
 
 
-<link rel="canonical" href="https://smart-lty.github.io/research/" />
-  <link href="https://smart-lty.github.io/research/index.xml" rel="alternate" type="application/rss+xml" title="HomePage of Tianyu Liu" />
-  <link href="https://smart-lty.github.io/research/index.xml" rel="feed" type="application/rss+xml" title="HomePage of Tianyu Liu" />
+<link rel="canonical" href="https://smart-lty.github.io/research/notes-for-drum/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -41,14 +39,19 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Researches" />
+<meta property="og:title" content="DRUM阅读笔记" />
 <meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://smart-lty.github.io/research/" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://smart-lty.github.io/research/notes-for-drum/" /><meta property="article:section" content="research" />
+<meta property="article:published_time" content="2022-11-06T22:29:49+08:00" />
+<meta property="article:modified_time" content="2022-11-06T22:29:49+08:00" />
 
-<meta itemprop="name" content="Researches">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Researches"/>
+<meta itemprop="name" content="DRUM阅读笔记">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2022-11-06T22:29:49+08:00" />
+<meta itemprop="dateModified" content="2022-11-06T22:29:49+08:00" />
+<meta itemprop="wordCount" content="567">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="DRUM阅读笔记"/>
 <meta name="twitter:description" content=""/>
 
 <!--[if lte IE 9]>
@@ -123,49 +126,32 @@
     <main id="main" class="main">
       <div class="content-wrapper">
         <div id="content" class="content">
-          
-<section id="archive" class="archive">
-      <div class="collection-title">
-        <h2 class="archive-year">2022</h2>
-      </div>
-
-    <div class="archive-post">
-      <span class="archive-post-time">
-        11-06
-      </span>
-      <span class="archive-post-title">
-        <a href="/research/notes-for-drum/" class="archive-post-link">
-          DRUM阅读笔记
-        </a>
-      </span>
-    </div>
-
-    <div class="archive-post">
-      <span class="archive-post-time">
-        08-30
-      </span>
-      <span class="archive-post-title">
-        <a href="/research/knowledge_graph/" class="archive-post-link">
-          An Introduction to Knowledge Graphs
-        </a>
-      </span>
-    </div>
-
-    <div class="archive-post">
-      <span class="archive-post-time">
-        08-20
-      </span>
-      <span class="archive-post-title">
-        <a href="/research/intro/" class="archive-post-link">
-          Introduction to My Research Topic: Graph Representation Learning
-        </a>
-      </span>
-    </div></section>
-
-<nav class="pagination">
-  
-  
-</nav>
+          <article class="post">
+  <div class="post-content">
+    <div style="font-size:25px; color:#47A2F0">论文阅读笔记：DRUM</div>
+<blockquote>
+<p>DRUM: End-To-End Differentiable Rule Mining On Knowledge Graphs</p>
+</blockquote>
+<p>Key Notes:</p>
+<ol>
+<li>Neural LP提出的定义规则学习的目标函数会导致部分规则学习的置信度<strong>不对</strong>，因而导致学到错误的规则。</li>
+<li>Neural LP提出的目标函数其实是某$(|R|+1)^T$矩阵的一阶张量分解。作者给出证明，对于任意规则集合及其所对应的置信度，都存在一个$L$阶张量分解及一组置信度参数$\alpha$，使得目标函数最优时可以精准获得这些规则应用于关系$H$进行推理时的结果。</li>
+<li>通过双向RNN建模规则中关系的序列性质，可以建模一些关系与关系之间的correlation，例如同一实体不会同时存在<code>fatherOf</code>和<code>matherOf</code>两种关系。</li>
+</ol>
+<p>Contributions: (refer to the original paper)</p>
+<ol>
+<li>An end-to-end differentiable rule mining model that is able to learn rule structures and scores simultaneously;</li>
+<li>We provide a connection between tensor completion and the estimation of confidence scores;</li>
+<li>We theoretically show that our formulation is expressive enough at finding the rule structures and their related confidences;</li>
+</ol>
+<p>Reading Insights:</p>
+<ol>
+<li>在写作时，无论是抓痛点，对先前工作进行改进，还是进行纯粹的创新，核心要突出的点是contribution，contribution到位了，才要去谈novelty</li>
+<li>规则中关系的序列性是需要建模的。目前的已有工作中，没有工作在GNN中嵌入建模序列性的模块，但这一部分反而是对于推理很关键的一环。使用add或者multiply的message function无法建模此序列性</li>
+<li>从高维看低维，需要模型具有更好的generalization；从低维看高维，需要模型具有更好的intuition.</li>
+</ol>
+  </div>
+</article>
         </div>
         
 
@@ -212,6 +198,15 @@
 
 
 <script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        tags: 'ams',
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
 
 
 

@@ -22,6 +22,7 @@ Hi there! I am Tianyu Liu, a third-year joint Ph.D. student at USTC and Shanghai
 My research interest mainly lie in <b>efficient inference for LLM</b>. I’m currently working on *speculative decoding*, a promising technique for acclerating LLM inference. I’m looking to collaborate on relative topics, mainly about inference techniques.
 
 # 🔥 News
+- *2025.07*: &nbsp; Preprint [LogitSpec](https://arxiv.org/abs/2507.01449) to Arxiv, a training-free retrieval-based speculative decoding methods!
 - *2025.01*: &nbsp; [PEARL](https://arxiv.org/pdf/2408.11850) is accepted  to [ICLR 2025](https://iclr.cc/Conferences/2025)!
 - *2025.01*: &nbsp; One paper accepted to [NAACL 2025](https://2025.naacl.org/). Thanks for the carry of [Qitan](https://shiliu-egg.github.io/)!
 - *2023.09*: &nbsp; [REST](https://arxiv.org/abs/2408.07088) is accepted to [NeurIPS 2023](https://nips.cc/Conferences/2023)!
@@ -30,8 +31,30 @@ My research interest mainly lie in <b>efficient inference for LLM</b>. I’m cur
 
 †: corresponding author; *:equal contribution
 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/logitspec.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+***LogitSpec*: Accelerating Retrieval-based Speculative Decoding via Next Next Token Speculation**
+
+**Tianyu Liu**<sup>*</sup>,
+[Qitan Lv](https://shiliu-egg.github.io/)<sup>*</sup>, 
+[Hao Li](https://github.com/LiHaoHN),
+Xing Gao,
+[Xiao Sun](https://jimmysuen.github.io/)<sup>†</sup>
+
+[**[Paper]**](https://arxiv.org/abs/2507.01449)&nbsp;
+[**[Code]**](https://github.com/smart-lty/LogitSpec)&nbsp;
+
+</div>
+</div>
+
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='https://s2.loli.net/2024/08/13/aoCAybN7S2KWsXd.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
+
 
 **PEARL: Parallel Speculative Decoding with Adaptive Draft Length**
 

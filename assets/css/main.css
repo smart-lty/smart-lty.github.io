@@ -9531,6 +9531,45 @@ button,
   letter-spacing: 0.02em;
 }
 
+.page__content h1 {
+  margin-top: 2.25rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid rgba(20, 20, 19, 0.08);
+}
+
+.news-list {
+  position: relative;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.news-list li {
+  display: grid;
+  grid-template-columns: 5.7rem 1fr;
+  gap: 0.85rem;
+  align-items: start;
+  margin: 0;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid rgba(20, 20, 19, 0.06);
+}
+
+.news-date {
+  display: inline-flex;
+  justify-content: center;
+  padding: 0.18rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.1);
+  color: #1d4ed8;
+  font-family: 'Poppins', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.news-text {
+  min-width: 0;
+}
+
 .paper-note {
   margin-top: 0.5rem;
   font-size: 0.95em;
@@ -9538,11 +9577,78 @@ button,
   font-style: italic;
 }
 
+.paper-box {
+  align-items: stretch;
+  margin: 1.1rem 0;
+  padding: 1.1rem;
+  border: 1px solid rgba(20, 20, 19, 0.08);
+  border-bottom: 1px solid rgba(20, 20, 19, 0.08);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 14px 34px rgba(20, 20, 19, 0.06);
+  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+}
+
+.paper-box:hover {
+  border-color: rgba(37, 99, 235, 0.18);
+  box-shadow: 0 18px 42px rgba(20, 20, 19, 0.1);
+  transform: translateY(-2px);
+}
+
+.paper-box .paper-box-image {
+  align-items: center;
+}
+
+.paper-box .paper-box-image > div {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.paper-box .paper-box-image img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  border: 1px solid rgba(20, 20, 19, 0.08);
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(20, 20, 19, 0.12);
+}
+
+.paper-box .paper-box-text p:first-child strong {
+  font-size: 1.05em;
+  line-height: 1.35;
+}
+
+.paper-box .paper-box-text p:nth-child(3) a,
+.paper-list-item p:last-child a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.85rem;
+  margin: 0.15rem 0.2rem 0.15rem 0;
+  padding: 0.12rem 0.5rem;
+  border: 1px solid rgba(37, 99, 235, 0.16);
+  border-radius: 7px;
+  background: rgba(37, 99, 235, 0.06);
+  color: #1d4ed8;
+  font-family: 'Poppins', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 0.85em;
+  text-decoration: none;
+}
+
+.badge {
+  border-radius: 0 6px 6px 0;
+  box-shadow: 0 8px 16px rgba(0, 54, 159, 0.18);
+}
+
 .paper-list-item {
-  border-left: 4px solid #e5e7eb;
-  padding: 1rem 0 1rem 1rem;
+  border: 1px solid rgba(20, 20, 19, 0.06);
+  border-left: 4px solid rgba(37, 99, 235, 0.35);
+  border-radius: 8px;
+  padding: 1rem 1rem 1rem 1.1rem;
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.01);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 10px 24px rgba(20, 20, 19, 0.04);
 }
 
 .paper-badge {
@@ -9550,7 +9656,7 @@ button,
   margin-right: 0.5rem;
   padding: 0.1rem 0.45rem;
   border-radius: 6px;
-  background: rgba(59, 130, 246, 0.15);
+  background: rgba(37, 99, 235, 0.1);
   color: #1d4ed8;
   font-size: 0.8em;
   font-weight: 600;
@@ -9569,4 +9675,20 @@ button,
   color: #d97757;
   background: rgba(217, 119, 87, 0.1);
   font-weight: 700;
+}
+
+@media (max-width: 47.9375em) {
+  .news-list li {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .news-date {
+    justify-content: flex-start;
+    width: fit-content;
+  }
+
+  .paper-box {
+    padding: 0.9rem;
+  }
 }

@@ -9607,7 +9607,7 @@ button,
 
 .paper-box .paper-box-image img {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: auto;
   object-fit: contain;
   border: 1px solid rgba(20, 20, 19, 0.08);
   border-radius: 6px;
@@ -9691,4 +9691,25 @@ button,
   .paper-box {
     padding: 0.9rem;
   }
+}
+
+.site-footer {
+  clear: both;
+  max-width: 925px;
+  margin: 2.5rem auto 0;
+  padding: 1.25rem 1em 2rem;
+  border-top: 1px solid rgba(20, 20, 19, 0.08);
+  text-align: center;
+}
+
+@media (min-width: 80em) {
+  .site-footer {
+    max-width: 1280px;
+  }
+}
+
+.site-footer p {
+  margin: 0;
+  color: rgba(20, 20, 19, 0.5);
+  font-size: 0.85em;
 }

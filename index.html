@@ -18,7 +18,7 @@
       document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
     </script>
     <link rel="preload" href="assets/fonts/anthropic-sans.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="assets/css/main.css?v=20260929-spacing1">
+    <link rel="stylesheet" href="assets/css/main.css?v=20260929-bibtex1">
     <link rel="stylesheet" href="assets/css/academicons.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -27,6 +27,7 @@
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#ffffff">
     <base target="_blank">
+    <script src="assets/js/bibtex.js?v=20260929-bibtex1" defer></script>
   </head>
   <body>
     <!--[if lt IE 9]>
@@ -116,10 +117,11 @@
                 <p class="paper-venue">ICLR 2025</p>
                 <p><strong>PEARL: Parallel Speculative Decoding with Adaptive Draft Length</strong></p>
                 <p><strong>Tianyu Liu</strong>, Yun Li<sup>†</sup>, <a href="https://shiliu-egg.github.io/">Qitan Lv</a>, Kai Liu, Jianchen Zhu, Winston Hu, <a href="https://jimmysuen.github.io/">Xiao Sun</a><sup>†</sup></p>
-                <p>
+                <p class="paper-links">
                   <a href="https://arxiv.org/pdf/2408.11850"><strong>[Paper]</strong></a>&nbsp;
                   <a href="http://pearl-code.github.io/"><strong>[Project]</strong></a>&nbsp;
                   <a href="https://github.com/smart-lty/ParallelSpeculativeDecoding"><strong>[Code]</strong></a>
+                  <a class="bibtex-toggle" href="assets/bibtex/pearl.bib?v=de1620dc3a32" target="_self" data-bibtex="pearl" data-paper="PEARL" data-source="https://openreview.net/forum?id=QOXrVMiHGK" data-provider="ICLR 2025 · OpenReview" data-sha256="de1620dc3a3211fbb4bf556ff93b83738e5ceb306919e84805a7d327edcffdac"><strong>[BibTeX]</strong></a>
                 </p>
                 <p class="paper-note"><strong>Introduce <a href="https://github.com/smart-lty/nano-PEARL"><strong>nano-PEARL</strong></a>: a Draft-Target Disaggregation LLM Serving System via Parallel Speculative Decoding!</strong></p>
               </div>
@@ -135,10 +137,11 @@
                 <p class="paper-venue">Preprint</p>
                 <p><strong>D-cut: Adaptive Verification Depth Pruning for Batched Speculative Decoding</strong></p>
                 <p><strong>Tianyu Liu</strong>, <a href="https://scholar.google.com/citations?user=kYveqcQAAAAJ&hl=en&oi=ao">Yuhao Shen</a>, Rui Cen, Junhan Shi, Jiebin Zhang, Guangshuo Qin, Hong Liu, Song Liu, Guanghua Yu<sup>†</sup>, Jianchen Zhu</p>
-                <p>
+                <p class="paper-links">
                   <a href="https://arxiv.org/pdf/2607.14647"><strong>[Paper]</strong></a>&nbsp;
                   <a href="https://github.com/vllm-project/vllm/pull/47131"><strong>[Code]</strong></a>&nbsp;
                   <a href="https://angelslim.readthedocs.io/zh-cn/latest/dcut.html"><strong>[Docs]</strong></a>
+                  <a class="bibtex-toggle" href="assets/bibtex/dcut.bib?v=2c7d599092f6" target="_self" data-bibtex="dcut" data-paper="dcut" data-source="https://export.arxiv.org/bibtex/2607.14647" data-provider="arXiv (preprint)" data-sha256="2c7d599092f695f4880607c22e0cf9be3ea7365dbb64fc812178e650309ecf7a"><strong>[BibTeX]</strong></a>
                 </p>
                 <p class="paper-note"><strong>Followed by DeepSeek <a href="https://arxiv.org/pdf/2607.05147"><strong>DSpark</strong></a>!</strong></p>
               </div>
@@ -154,8 +157,9 @@
                 <p class="paper-venue">COLM 2026 ER Workshop · Spotlight</p>
                 <p><strong>When Hidden States Drift: Can KV Caches Rescue Long-Range Speculative Decoding?</strong></p>
                 <p><strong>Tianyu Liu</strong>, <a href="https://scholar.google.com/citations?user=kYveqcQAAAAJ&hl=en&oi=ao">Yuhao Shen</a>, <a href="https://scholar.google.com/citations?user=JBa6BUUAAAAJ&amp;hl=zh-CN">Xinyi Hu</a>, Baolin Zhang, Hengxin Zhang, Jun Dai, <a href="https://scholar.google.com/citations?user=JSvMHnEAAAAJ&amp;hl=en">Jun Zhang</a><sup>†</sup>, Shuang Ge<sup>†</sup>, Lei Chen, Yue Li, Mingcheng Wan</p>
-                <p>
+                <p class="paper-links">
                   <a href="https://arxiv.org/pdf/2604.26412"><strong>[Paper]</strong></a>
+                  <a class="bibtex-toggle" href="assets/bibtex/kvshot.bib?v=8decea98f9df" target="_self" data-bibtex="kvshot" data-paper="kvshot" data-source="https://export.arxiv.org/bibtex/2604.26412" data-provider="arXiv (preprint)" data-sha256="8decea98f9df22772432a44fd894c03320dec588fd0f283756aebaeb2510e884" data-note="This citation is for the arXiv preprint."><strong>[BibTeX]</strong></a>
                 </p>
               </div>
             </div>
@@ -170,8 +174,9 @@
                 <p class="paper-venue">NeurIPS 2026</p>
                 <p><strong>TALON: Confidence-Aware Speculative Decoding with Adaptive Token Trees</strong></p>
                 <p><strong>Tianyu Liu</strong><sup>*</sup>, <a href="https://shiliu-egg.github.io/">Qitan Lv</a><sup>*</sup>, <a href="https://scholar.google.com/citations?user=kYveqcQAAAAJ&hl=en&oi=ao">Yuhao Shen</a>, <a href="https://scholar.google.com/citations?user=JSvMHnEAAAAJ&amp;hl=en">Jun Zhang</a>, <a href="https://jimmysuen.github.io/">Xiao Sun</a><sup>†</sup>, <a href="http://staff.ustc.edu.cn/~xysun720/">Xiaoyan Sun</a></p>
-                <p>
+                <p class="paper-links">
                   <a href="https://arxiv.org/pdf/2601.07353"><strong>[Paper]</strong></a>
+                  <a class="bibtex-toggle" href="assets/bibtex/talon.bib?v=249d8d33ef10" target="_self" data-bibtex="talon" data-paper="TALON" data-source="https://export.arxiv.org/bibtex/2601.07353" data-provider="arXiv (preprint)" data-sha256="249d8d33ef10a8151f1f387fd44a6d12f23c66dfdc756b692eb1bbb3fa448af5" data-note="This citation is for the arXiv preprint; its author list differs from the accepted version shown above."><strong>[BibTeX]</strong></a>
                 </p>
               </div>
             </div>
@@ -186,9 +191,10 @@
                 <p class="paper-venue">ACL 2026 Findings</p>
                 <p><strong><em>LogitSpec</em>: Accelerating Retrieval-based Speculative Decoding via Next Next Token Speculation</strong></p>
                 <p><strong>Tianyu Liu</strong><sup>*</sup>, <a href="https://shiliu-egg.github.io/">Qitan Lv</a><sup>*</sup>, <a href="https://github.com/LiHaoHN">Hao Li</a>, Xing Gao, <a href="https://jimmysuen.github.io/">Xiao Sun</a><sup>†</sup>, <a href="http://staff.ustc.edu.cn/~xysun720/">Xiaoyan Sun</a></p>
-                <p>
+                <p class="paper-links">
                   <a href="https://arxiv.org/abs/2507.01449"><strong>[Paper]</strong></a>&nbsp;
                   <a href="https://github.com/smart-lty/LogitSpec"><strong>[Code]</strong></a>
+                  <a class="bibtex-toggle" href="assets/bibtex/logitspec.bib?v=5bc99021c2e5" target="_self" data-bibtex="logitspec" data-paper="logitspec" data-source="https://aclanthology.org/2026.findings-acl.1655.bib" data-provider="ACL 2026 Findings" data-sha256="5bc99021c2e5f452362cfe24cf487abeb18a552747ffd0cbd6622580e8640631"><strong>[BibTeX]</strong></a>
                 </p>
               </div>
             </div>
@@ -203,9 +209,10 @@
                 <p class="paper-venue">NeurIPS 2023</p>
                 <p><strong>Learning Rule-Induced Subgraph Representations for Inductive Relation Prediction</strong></p>
                 <p><strong>Tianyu Liu</strong>, <a href="https://shiliu-egg.github.io/">Qitan Lv</a>, Jie Wang<sup>†</sup>, Shuling Yang, Hanzhu Chen</p>
-                <p>
+                <p class="paper-links">
                   <a href="https://arxiv.org/pdf/2408.07088"><strong>[Paper]</strong></a>&nbsp;
                   <a href="https://github.com/smart-lty/REST"><strong>[Code]</strong></a>
+                  <a class="bibtex-toggle" href="assets/bibtex/rest.bib?v=007acadecaa1" target="_self" data-bibtex="rest" data-paper="REST" data-source="https://papers.nips.cc/paper_files/paper/2023/file/0b06c8673ebb453e5e468f7743d8f54e-Bibtex-Conference.bib" data-provider="NeurIPS 2023" data-sha256="007acadecaa18c358d9bfe36cef46bda1cc87c883ef59af77396e05276a526b8"><strong>[BibTeX]</strong></a>
                 </p>
               </div>
             </div>
@@ -214,10 +221,11 @@
             <div class="paper-list-item">
               <p><span class="paper-badge">Tech Report</span> <strong>AngelSpec: Towards Real-World High Performance Inference with Speculative Decoding</strong></p>
               <p>Hong Liu, Rui Cen, Junhan Shi, Guangshuo Qin, Jiebin Zhang, <strong>Tianyu Liu</strong>, Runzhi Fan, Guoliang Zhao, Ruobing Xie, Kai Zhang, Song Liu, Guanghua Yu<sup>†</sup>, Jianchen Zhu</p>
-              <p>
+              <p class="paper-links">
                 <a href="https://arxiv.org/pdf/2607.25852"><strong>[Paper]</strong></a>&nbsp;
                 <a href="https://github.com/Tencent/AngelSpec"><strong>[Code]</strong></a>&nbsp;
                 <a href="https://angelspec.readthedocs.io/en/latest/"><strong>[Blog]</strong></a>
+                  <a class="bibtex-toggle" href="assets/bibtex/angelspec.bib?v=381082fb66ea" target="_self" data-bibtex="angelspec" data-paper="angelspec" data-source="https://export.arxiv.org/bibtex/2607.25852" data-provider="arXiv (preprint)" data-sha256="381082fb66ea701e28b83042fedea17b951a1c6fa17fac3e805ef8b4c717b30c"><strong>[BibTeX]</strong></a>
               </p>
             </div>
 
@@ -225,50 +233,56 @@
               <p><span class="paper-badge">arXiv 2026</span> <strong>Graft — Draft Less, Retrieve More: Hybrid Tree Construction for Speculative Decoding</strong></p>
               <p><a href="https://scholar.google.com/citations?user=kYveqcQAAAAJ&hl=en&oi=ao">Yuhao Shen</a><sup>‡</sup>, <strong>Tianyu Liu</strong><sup>‡</sup>, <a href="https://scholar.google.com/citations?user=JBa6BUUAAAAJ&amp;hl=zh-CN">Xinyi Hu</a><sup>‡</sup>, Quan Kong, Baolin Zhang, Jun Dai, <a href="https://scholar.google.com/citations?user=JSvMHnEAAAAJ&amp;hl=en">Jun Zhang</a><sup>†</sup>, Shuang Ge, Lei Chen, Yue Li, Mingcheng Wan, <a href="https://cwang-zju.github.io/">Cong Wang</a><sup>†</sup></p>
               <p><sup>‡</sup>: core contribution</p>
-              <p>
+              <p class="paper-links">
                 <a href="https://arxiv.org/pdf/2605.20104"><strong>[Paper]</strong></a>
+                  <a class="bibtex-toggle" href="assets/bibtex/graft.bib?v=a65ac122eafc" target="_self" data-bibtex="graft" data-paper="graft" data-source="https://export.arxiv.org/bibtex/2605.20104" data-provider="arXiv (preprint)" data-sha256="a65ac122eafc09067f4f6f040167ca453e54162ced8c72e070d8625ccf2e2329"><strong>[BibTeX]</strong></a>
               </p>
             </div>
 
             <div class="paper-list-item">
               <p><span class="paper-badge">EMNLP 2026 Main</span> <strong>HIPPO: Accelerating Video Large Language Models Inference via Holistic-aware Parallel Speculative Decoding</strong></p>
               <p><a href="https://shiliu-egg.github.io/">Qitan Lv</a><sup>*</sup>, <strong>Tianyu Liu</strong><sup>*</sup>, Wen Wu, Xuenan Xu, <a href="https://web.ee.tsinghua.edu.cn/zhoubowen/en/index.htm">Bowen Zhou</a>, <a href="https://faculty.ustc.edu.cn/wufeng1/zh_CN/index.htm">Feng Wu</a>, <a href="https://mi.eng.cam.ac.uk/~cz277/#pubs">Chao Zhang</a><sup>†</sup></p>
-              <p>
+              <p class="paper-links">
                 <a href="https://arxiv.org/abs/2601.08273"><strong>[Paper]</strong></a>
+                  <a class="bibtex-toggle" href="assets/bibtex/hippo.bib?v=c347ac4d587a" target="_self" data-bibtex="hippo" data-paper="HIPPO" data-source="https://export.arxiv.org/bibtex/2601.08273" data-provider="arXiv (preprint)" data-sha256="c347ac4d587ae476cfc0ff6a9ebb7371edb2794e35073ed580960273a558413a" data-note="This citation is for the arXiv preprint."><strong>[BibTeX]</strong></a>
               </p>
             </div>
 
             <div class="paper-list-item">
               <p><span class="paper-badge">arXiv 2026</span> <strong>KALE: Enhancing Knowledge Manipulation in Large Language Models via Knowledge-aware Learning</strong></p>
               <p><a href="https://shiliu-egg.github.io/">Qitan Lv</a><sup>*</sup>, <strong>Tianyu Liu</strong><sup>*</sup>, <a href="https://qiaoshengzhang.github.io/">Qiaosheng Zhang</a><sup>†</sup>, <a href="https://sites.google.com/view/xingchengxu">Xingcheng Xu</a><sup>†</sup>, <a href="https://causallu.com/bio/">Chaochao Lu</a></p>
-              <p>
+              <p class="paper-links">
                 <a href="https://arxiv.org/abs/2601.07430"><strong>[Paper]</strong></a>
+                  <a class="bibtex-toggle" href="assets/bibtex/kale.bib?v=e2fc14609c97" target="_self" data-bibtex="kale" data-paper="KALE" data-source="https://export.arxiv.org/bibtex/2601.07430" data-provider="arXiv (preprint)" data-sha256="e2fc14609c97337324521774b4261b129d7f52d063dbafd8a2c3b770bee8b808"><strong>[BibTeX]</strong></a>
               </p>
             </div>
 
             <div class="paper-list-item">
               <p><span class="paper-badge">ACL 2026 Main (Oral)</span> <strong>Double: Breaking the Acceleration Limit via Double Retrieval Speculative Parallelism</strong></p>
               <p><a href="https://scholar.google.com/citations?user=kYveqcQAAAAJ&hl=en&oi=ao">Yuhao Shen</a>, <strong>Tianyu Liu</strong>, <a href="https://j1shen.github.io/">Junyi Shen</a>, Jinyang Wu, Quan Kong, Li Huan, <a href="https://cwang-zju.github.io/">Cong Wang</a></p>
-              <p>
+              <p class="paper-links">
                 <a href="https://arxiv.org/abs/2601.05524"><strong>[Paper]</strong></a>&nbsp;
                 <a href="https://github.com/Sylvan820/Double-Spec"><strong>[Code]</strong></a>
+                  <a class="bibtex-toggle" href="assets/bibtex/double.bib?v=e63453706345" target="_self" data-bibtex="double" data-paper="double" data-source="https://aclanthology.org/2026.acl-long.879.bib" data-provider="ACL 2026" data-sha256="e63453706345f8fe480402a8bd9d9d657a54c7318964681564c06f863f3f1474"><strong>[BibTeX]</strong></a>
               </p>
             </div>
 
             <div class="paper-list-item">
               <p><span class="paper-badge">ICLR 2026</span> <strong>SpecBranch: Speculative Decoding via Hybrid Drafting and Rollback-Aware Branch Parallelism</strong></p>
               <p><a href="https://scholar.google.com/citations?user=kYveqcQAAAAJ&hl=en&oi=ao">Yuhao Shen</a>, <a href="https://j1shen.github.io/">Junyi Shen</a>, Quan Kong, <strong>Tianyu Liu</strong>, <a href="https://yao.lu/">Yao Lu</a>, <a href="https://cwang-zju.github.io/">Cong Wang</a></p>
-              <p>
+              <p class="paper-links">
                 <a href="https://arxiv.org/abs/2506.01979"><strong>[Paper]</strong></a>&nbsp;
                 <a href="https://github.com/Sylvan820/Specbranch"><strong>[Code]</strong></a>
+                  <a class="bibtex-toggle" href="assets/bibtex/specbranch.bib?v=a3a73c2a62ae" target="_self" data-bibtex="specbranch" data-paper="specbranch" data-source="https://openreview.net/forum?id=BrnlCSqO6n" data-provider="ICLR 2026 · OpenReview" data-sha256="a3a73c2a62aef01513bf139f9c1cc9af0a626a69b4c8da2ee230fda60ba719f8"><strong>[BibTeX]</strong></a>
               </p>
             </div>
 
             <div class="paper-list-item">
               <p><span class="paper-badge">NAACL 2025</span> <strong>Exploiting Edited Large Language Models as General Scientific Optimizers</strong></p>
               <p><a href="https://shiliu-egg.github.io/">Qitan Lv</a><sup>*</sup>, <strong>Tianyu Liu</strong><sup>*</sup>, <a href="https://wanghong1700.github.io/">Hong Wang</a><sup>†</sup></p>
-              <p>
+              <p class="paper-links">
                 <a href="https://arxiv.org/pdf/2503.09620"><strong>[Paper]</strong></a>
+                  <a class="bibtex-toggle" href="assets/bibtex/scientific-optimizers.bib?v=42fe6d981e0e" target="_self" data-bibtex="scientific-optimizers" data-paper="scientific-optimizers" data-source="https://aclanthology.org/2025.naacl-long.270.bib" data-provider="NAACL 2025" data-sha256="42fe6d981e0e54fd865d9fc80a7ade6d29b973fcc021233592a8860b21cefd60"><strong>[BibTeX]</strong></a>
               </p>
             </div>
 

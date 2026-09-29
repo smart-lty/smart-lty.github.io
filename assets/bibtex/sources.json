@@ -1,0 +1,160 @@
+{
+  "policy": "Citations are exact official exports. Preprints retain arXiv metadata; conference fields are never inferred or added.",
+  "citations": [
+    {
+      "paper": "pearl",
+      "arxiv_id": "2408.11850",
+      "retrieved_on": "2026-09-29",
+      "type": "conference",
+      "provider": "ICLR 2025 · OpenReview",
+      "source_url": "https://openreview.net/forum?id=QOXrVMiHGK",
+      "export_url": "https://api2.openreview.net/notes/search?term=Parallel+Speculative+Decoding+with+Adaptive+Draft+Length&limit=5",
+      "note_id": "QOXrVMiHGK",
+      "extraction": "Exact UTF-8 value of the official note content._bibtex.value; no added newline",
+      "file": "assets/bibtex/pearl.bib",
+      "sha256": "de1620dc3a3211fbb4bf556ff93b83738e5ceb306919e84805a7d327edcffdac"
+    },
+    {
+      "paper": "dcut",
+      "arxiv_id": "2607.14647",
+      "retrieved_on": "2026-09-29",
+      "type": "preprint",
+      "provider": "arXiv (preprint)",
+      "source_url": "https://export.arxiv.org/bibtex/2607.14647",
+      "landing_url": "https://arxiv.org/abs/2607.14647",
+      "extraction": "Unmodified HTTP response body",
+      "file": "assets/bibtex/dcut.bib",
+      "sha256": "2c7d599092f695f4880607c22e0cf9be3ea7365dbb64fc812178e650309ecf7a"
+    },
+    {
+      "paper": "kvshot",
+      "arxiv_id": "2604.26412",
+      "retrieved_on": "2026-09-29",
+      "type": "preprint",
+      "provider": "arXiv (preprint)",
+      "source_url": "https://export.arxiv.org/bibtex/2604.26412",
+      "landing_url": "https://arxiv.org/abs/2604.26412",
+      "extraction": "Unmodified HTTP response body",
+      "file": "assets/bibtex/kvshot.bib",
+      "sha256": "8decea98f9df22772432a44fd894c03320dec588fd0f283756aebaeb2510e884"
+    },
+    {
+      "paper": "talon",
+      "arxiv_id": "2601.07353",
+      "retrieved_on": "2026-09-29",
+      "type": "preprint",
+      "provider": "arXiv (preprint)",
+      "source_url": "https://export.arxiv.org/bibtex/2601.07353",
+      "landing_url": "https://arxiv.org/abs/2601.07353",
+      "extraction": "Unmodified HTTP response body",
+      "file": "assets/bibtex/talon.bib",
+      "sha256": "249d8d33ef10a8151f1f387fd44a6d12f23c66dfdc756b692eb1bbb3fa448af5",
+      "version_note": "User approved using this arXiv export on 2026-09-29. Its author list differs from the accepted version displayed on the homepage; the export is preserved verbatim."
+    },
+    {
+      "paper": "logitspec",
+      "arxiv_id": "2507.01449",
+      "retrieved_on": "2026-09-29",
+      "type": "conference",
+      "provider": "ACL 2026 Findings",
+      "source_url": "https://aclanthology.org/2026.findings-acl.1655.bib",
+      "extraction": "Unmodified HTTP response body",
+      "file": "assets/bibtex/logitspec.bib",
+      "sha256": "5bc99021c2e5f452362cfe24cf487abeb18a552747ffd0cbd6622580e8640631"
+    },
+    {
+      "paper": "rest",
+      "arxiv_id": "2408.07088",
+      "retrieved_on": "2026-09-29",
+      "type": "conference",
+      "provider": "NeurIPS 2023",
+      "source_url": "https://papers.nips.cc/paper_files/paper/2023/file/0b06c8673ebb453e5e468f7743d8f54e-Bibtex-Conference.bib",
+      "extraction": "Unmodified HTTP response body",
+      "file": "assets/bibtex/rest.bib",
+      "sha256": "007acadecaa18c358d9bfe36cef46bda1cc87c883ef59af77396e05276a526b8"
+    },
+    {
+      "paper": "angelspec",
+      "arxiv_id": "2607.25852",
+      "retrieved_on": "2026-09-29",
+      "type": "preprint",
+      "provider": "arXiv (preprint)",
+      "source_url": "https://export.arxiv.org/bibtex/2607.25852",
+      "landing_url": "https://arxiv.org/abs/2607.25852",
+      "extraction": "Unmodified HTTP response body",
+      "file": "assets/bibtex/angelspec.bib",
+      "sha256": "381082fb66ea701e28b83042fedea17b951a1c6fa17fac3e805ef8b4c717b30c"
+    },
+    {
+      "paper": "graft",
+      "arxiv_id": "2605.20104",
+      "retrieved_on": "2026-09-29",
+      "type": "preprint",
+      "provider": "arXiv (preprint)",
+      "source_url": "https://export.arxiv.org/bibtex/2605.20104",
+      "landing_url": "https://arxiv.org/abs/2605.20104",
+      "extraction": "Unmodified HTTP response body",
+      "file": "assets/bibtex/graft.bib",
+      "sha256": "a65ac122eafc09067f4f6f040167ca453e54162ced8c72e070d8625ccf2e2329"
+    },
+    {
+      "paper": "hippo",
+      "arxiv_id": "2601.08273",
+      "retrieved_on": "2026-09-29",
+      "type": "preprint",
+      "provider": "arXiv (preprint)",
+      "source_url": "https://export.arxiv.org/bibtex/2601.08273",
+      "landing_url": "https://arxiv.org/abs/2601.08273",
+      "extraction": "Unmodified HTTP response body",
+      "file": "assets/bibtex/hippo.bib",
+      "sha256": "c347ac4d587ae476cfc0ff6a9ebb7371edb2794e35073ed580960273a558413a"
+    },
+    {
+      "paper": "kale",
+      "arxiv_id": "2601.07430",
+      "retrieved_on": "2026-09-29",
+      "type": "preprint",
+      "provider": "arXiv (preprint)",
+      "source_url": "https://export.arxiv.org/bibtex/2601.07430",
+      "landing_url": "https://arxiv.org/abs/2601.07430",
+      "extraction": "Unmodified HTTP response body",
+      "file": "assets/bibtex/kale.bib",
+      "sha256": "e2fc14609c97337324521774b4261b129d7f52d063dbafd8a2c3b770bee8b808"
+    },
+    {
+      "paper": "double",
+      "arxiv_id": "2601.05524",
+      "retrieved_on": "2026-09-29",
+      "type": "conference",
+      "provider": "ACL 2026",
+      "source_url": "https://aclanthology.org/2026.acl-long.879.bib",
+      "extraction": "Unmodified HTTP response body",
+      "file": "assets/bibtex/double.bib",
+      "sha256": "e63453706345f8fe480402a8bd9d9d657a54c7318964681564c06f863f3f1474"
+    },
+    {
+      "paper": "specbranch",
+      "arxiv_id": "2506.01979",
+      "retrieved_on": "2026-09-29",
+      "type": "conference",
+      "provider": "ICLR 2026 · OpenReview",
+      "source_url": "https://openreview.net/forum?id=BrnlCSqO6n",
+      "export_url": "https://api2.openreview.net/notes/search?term=SpecBranch&limit=100",
+      "note_id": "BrnlCSqO6n",
+      "extraction": "Exact UTF-8 value of the official note content._bibtex.value; no added newline",
+      "file": "assets/bibtex/specbranch.bib",
+      "sha256": "a3a73c2a62aef01513bf139f9c1cc9af0a626a69b4c8da2ee230fda60ba719f8"
+    },
+    {
+      "paper": "scientific-optimizers",
+      "arxiv_id": "2503.09620",
+      "retrieved_on": "2026-09-29",
+      "type": "conference",
+      "provider": "NAACL 2025",
+      "source_url": "https://aclanthology.org/2025.naacl-long.270.bib",
+      "extraction": "Unmodified HTTP response body",
+      "file": "assets/bibtex/scientific-optimizers.bib",
+      "sha256": "42fe6d981e0e54fd865d9fc80a7ade6d29b973fcc021233592a8860b21cefd60"
+    }
+  ]
+}

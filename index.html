@@ -17,10 +17,8 @@
     <script>
       document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preload" href="assets/fonts/anthropic-sans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/css/main.css?v=20260929-spacing1">
     <link rel="stylesheet" href="assets/css/academicons.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -39,14 +37,12 @@
       <div class="masthead__inner-wrap">
         <div class="masthead__menu">
           <nav id="site-nav" class="greedy-nav" aria-label="Primary">
-            <button aria-label="Toggle navigation"><div class="navicon"></div></button>
             <ul class="visible-links">
-              <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me" target="_self">Homepage</a></li>
+              <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me" target="_self">Tianyu Liu</a></li>
               <li class="masthead__menu-item"><a href="#about-me" target="_self">About Me</a></li>
               <li class="masthead__menu-item"><a href="#news" target="_self">News</a></li>
               <li class="masthead__menu-item"><a href="#publications" target="_self">Publications</a></li>
             </ul>
-            <ul class="hidden-links hidden"></ul>
           </nav>
         </div>
       </div>
@@ -59,25 +55,18 @@
             <img src="images/luca.jpg" class="author__avatar" alt="Photo of Tianyu Liu">
           </div>
           <div class="author__content">
-            <h3 class="author__name" itemprop="name">Tianyu Liu (刘天宇)</h3>
+            <h2 class="author__name" itemprop="name">Tianyu Liu<span class="author__name-zh">刘天宇</span></h2>
             <p class="author__bio">Joint Ph.D. student at USTC and Shanghai AI Laboratory.</p>
           </div>
           <div class="author__urls-wrapper">
             <ul class="author__urls social-icons">
               <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Shanghai, China</li>
               <li><a href="mailto:tianyu_liu@mail.ustc.edu.cn"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
-              <li><a href="assets/cv-zh.pdf"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> CV (中文)</a></li>
+              <li><a href="assets/cv-zh.pdf?v=20260929"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> CV (中文)</a></li>
               <li><a href="https://github.com/smart-lty"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
               <li><a href="https://scholar.google.com/citations?user=pGYBFmgAAAAJ"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>
               <li><a href="https://www.zhihu.com/people/xiao-jian-bu-wen-sheng-jian-qiao-65"><i class="fab fa-fw fa-zhihu" aria-hidden="true"></i> Zhihu</a></li>
             </ul>
-            <div class="author__urls_sm" aria-label="Quick links">
-              <a href="mailto:tianyu_liu@mail.ustc.edu.cn" aria-label="Email"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>
-              <a href="assets/cv-zh.pdf" aria-label="CV (中文)"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i></a>
-              <a href="https://github.com/smart-lty" aria-label="GitHub"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>
-              <a href="https://scholar.google.com/citations?user=pGYBFmgAAAAJ" aria-label="Google Scholar"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i></a>
-              <a href="https://www.zhihu.com/people/xiao-jian-bu-wen-sheng-jian-qiao-65" aria-label="Zhihu"><i class="fab fa-fw fa-zhihu" aria-hidden="true"></i></a>
-            </div>
           </div>
         </div>
       </div>
@@ -86,79 +75,85 @@
         <meta itemprop="headline" content="About Tianyu Liu (刘天宇)">
         <div class="page__inner-wrap">
           <section class="page__content" itemprop="text">
-            <span class="anchor" id="about-me"></span>
-            <p>Hi there! I am Tianyu Liu (刘天宇), a fourth-year joint Ph.D. student at USTC and Shanghai AI Laboratory, supervised by <a href="https://jimmysuen.github.io/">Xiao Sun</a>.</p>
-            <p>My research focuses on <strong>efficient inference for LLMs</strong>, especially <em>speculative decoding</em>. I proposed <a href="https://arxiv.org/pdf/2408.11850">PEARL</a> (ICLR 2025), the first parallel speculative decoding framework, and <a href="https://arxiv.org/pdf/2607.14647">D-cut</a>, which is now shipped in Tencent's open-source <a href="https://github.com/Tencent/AngelSlim">AngelSlim</a> and followed by DeepSeek's DSpark. I am always open to collaborations on related inference topics.</p>
-            <p>I expect to graduate in 2027 and am currently seeking job opportunities in efficient LLM inference and AI systems. Please feel free to contact me at <a href="mailto:tianyu_liu@mail.ustc.edu.cn">tianyu_liu@mail.ustc.edu.cn</a>.</p>
+            <h1 class="intro-title" id="about-me">About me</h1>
+            <p>Hi there! I am Tianyu Liu (刘天宇), a joint Ph.D. student at USTC and Shanghai AI Laboratory, supervised by <a href="https://jimmysuen.github.io/">Xiao Sun</a>. My research focuses on <strong>efficient inference for LLMs</strong>, especially <em>speculative decoding</em>. I proposed <a href="https://arxiv.org/pdf/2408.11850">PEARL</a> (ICLR 2025), the first parallel speculative decoding framework, and <a href="https://arxiv.org/pdf/2607.14647">D-cut</a>, which is now shipped in Tencent's open-source <a href="https://github.com/Tencent/AngelSlim">AngelSlim</a> and followed by DeepSeek's DSpark.</p>
+            <p>I expect to graduate in 2027 and am currently seeking job opportunities in efficient LLM inference and AI systems. I am also open to collaborations on related inference topics. Please feel free to contact me at <a href="mailto:tianyu_liu@mail.ustc.edu.cn">tianyu_liu@mail.ustc.edu.cn</a>.</p>
 
-            <h1 id="news">🔥 News</h1>
+            <h1 id="news">News</h1>
             <ul class="news-list">
-              <li><span class="news-date">2026.08</span><span class="news-text"><a href="https://arxiv.org/pdf/2604.26412">KVShot</a> is accepted to the <a href="https://colmweb.org/">COLM 2026</a> Workshop on Efficient Reasoning!</span></li>
+              <li><span class="news-date">2026.09</span><span class="news-text"><a href="https://arxiv.org/pdf/2601.07353">TALON</a> has been accepted to NeurIPS 2026!</span></li>
+              <li><span class="news-date">2026.09</span><span class="news-text"><a href="https://arxiv.org/abs/2601.08273">HIPPO</a> has been accepted to the EMNLP 2026 main conference!</span></li>
+              <li><span class="news-date">2026.08</span><span class="news-text"><a href="https://arxiv.org/pdf/2604.26412">KVShot</a> has been accepted as a spotlight at the <a href="https://colmweb.org/">COLM 2026</a> Workshop on Efficient Reasoning!</span></li>
               <li><span class="news-date">2026.07</span><span class="news-text">Released <a href="https://arxiv.org/pdf/2607.25852">AngelSpec</a>, the Tencent Hunyuan technical report on real-world high performance inference with speculative decoding.</span></li>
               <li><span class="news-date">2026.07</span><span class="news-text"><a href="https://arxiv.org/pdf/2607.14647">D-cut</a> is on arXiv, reaching up to 3.0&times; speedup over autoregressive decoding on MoE models under high concurrency.</span></li>
+            </ul>
+            <details class="news-archive">
+              <summary>Earlier updates</summary>
+              <ul class="news-list">
               <li><span class="news-date">2026.06</span><span class="news-text">Introduce <a href="https://angelslim.readthedocs.io/zh-cn/latest/dcut.html">D-cut</a>, an adaptive verification-depth pruning method that accelerates speculative decoding at high concurrency.</span></li>
               <li><span class="news-date">2026.05</span><span class="news-text">Released two new preprints on speculative decoding: <a href="https://arxiv.org/pdf/2604.26412">KVShot</a> and <a href="https://arxiv.org/pdf/2605.20104">Graft</a>!</span></li>
               <li><span class="news-date">2026.04</span><span class="news-text"><a href="https://arxiv.org/abs/2601.05524">Double</a> is accepted to <a href="https://2026.aclweb.org/">ACL 2026</a> main conference as an oral presentation, and <a href="https://arxiv.org/abs/2507.01449">LogitSpec</a> is accepted to ACL 2026 Findings!</span></li>
               <li><span class="news-date">2026.01</span><span class="news-text"><a href="https://arxiv.org/abs/2506.01979">SpecBranch</a> is accepted to <a href="https://iclr.cc/Conferences/2026">ICLR 2026</a>!</span></li>
               <li><span class="news-date">2026.01</span><span class="news-text">Released four preprints: <a href="https://arxiv.org/pdf/2601.07353">TALON</a>, <a href="https://arxiv.org/abs/2601.07430">KALE</a>, <a href="https://arxiv.org/abs/2601.05524">Double</a>, and <a href="https://arxiv.org/abs/2601.08273">HIPPO</a>!</span></li>
               <li><span class="news-date">2025.10</span><span class="news-text">Released <a href="https://github.com/smart-lty/nano-PEARL">nano-PEARL</a>, an engineering follow-up to PEARL with multi-GPU draft-target disaggregation.</span></li>
-              <li><span class="news-date">2025.07</span><span class="news-text">Preprint <a href="https://arxiv.org/abs/2507.01449">LogitSpec</a> to arXiv, a training-free retrieval-based speculative decoding method!</span></li>
+              <li><span class="news-date">2025.07</span><span class="news-text">Released <a href="https://arxiv.org/abs/2507.01449">LogitSpec</a> on arXiv, a training-free retrieval-based speculative decoding method!</span></li>
               <li><span class="news-date">2025.01</span><span class="news-text"><a href="https://arxiv.org/pdf/2408.11850">PEARL</a> is accepted to <a href="https://iclr.cc/Conferences/2025/">ICLR 2025</a>!</span></li>
               <li><span class="news-date">2025.01</span><span class="news-text">One paper accepted to <a href="https://2025.naacl.org/">NAACL 2025</a>. Thanks for the carry of <a href="https://shiliu-egg.github.io/">Qitan</a>!</span></li>
               <li><span class="news-date">2023.09</span><span class="news-text"><a href="https://arxiv.org/abs/2408.07088">REST</a> is accepted to <a href="https://nips.cc/Conferences/2023/">NeurIPS 2023</a>!</span></li>
-            </ul>
+              </ul>
+            </details>
 
-            <h1 id="publications">📝 Selected Publications</h1>
+            <h1 id="publications">Selected Publications</h1>
             <p><sup>†</sup>: corresponding author; <sup>*</sup>: equal contribution</p>
 
             <div class="paper-box">
               <div class="paper-box-image">
                 <div>
-                  <div class="badge">ICLR 2025</div>
                   <img src="images/pearl.png" alt="PEARL illustration" width="100%">
                 </div>
               </div>
               <div class="paper-box-text">
-                <p><span class="paper-highlight">Featured</span> <strong>PEARL: Parallel Speculative Decoding with Adaptive Draft Length</strong></p>
+                <p class="paper-venue">ICLR 2025</p>
+                <p><strong>PEARL: Parallel Speculative Decoding with Adaptive Draft Length</strong></p>
                 <p><strong>Tianyu Liu</strong>, Yun Li<sup>†</sup>, <a href="https://shiliu-egg.github.io/">Qitan Lv</a>, Kai Liu, Jianchen Zhu, Winston Hu, <a href="https://jimmysuen.github.io/">Xiao Sun</a><sup>†</sup></p>
                 <p>
                   <a href="https://arxiv.org/pdf/2408.11850"><strong>[Paper]</strong></a>&nbsp;
                   <a href="http://pearl-code.github.io/"><strong>[Project]</strong></a>&nbsp;
                   <a href="https://github.com/smart-lty/ParallelSpeculativeDecoding"><strong>[Code]</strong></a>
                 </p>
-                <p class="paper-note"><br><strong>🚀 Introduce <a href="https://github.com/smart-lty/nano-PEARL"><strong>nano-PEARL</strong></a>: a Draft-Target Disaggregation LLM Serving System via Parallel Speculative Decoding!</strong></p>
+                <p class="paper-note"><strong>Introduce <a href="https://github.com/smart-lty/nano-PEARL"><strong>nano-PEARL</strong></a>: a Draft-Target Disaggregation LLM Serving System via Parallel Speculative Decoding!</strong></p>
               </div>
             </div>
 
             <div class="paper-box">
               <div class="paper-box-image">
                 <div>
-                  <div class="badge">Preprint</div>
                   <img src="images/dcut.png" alt="D-cut illustration" width="100%">
                 </div>
               </div>
               <div class="paper-box-text">
-                <p><span class="paper-highlight">Featured</span> <strong>D-cut: Adaptive Verification Depth Pruning for Batched Speculative Decoding</strong></p>
+                <p class="paper-venue">Preprint</p>
+                <p><strong>D-cut: Adaptive Verification Depth Pruning for Batched Speculative Decoding</strong></p>
                 <p><strong>Tianyu Liu</strong>, <a href="https://scholar.google.com/citations?user=kYveqcQAAAAJ&hl=en&oi=ao">Yuhao Shen</a>, Rui Cen, Junhan Shi, Jiebin Zhang, Guangshuo Qin, Hong Liu, Song Liu, Guanghua Yu<sup>†</sup>, Jianchen Zhu</p>
                 <p>
                   <a href="https://arxiv.org/pdf/2607.14647"><strong>[Paper]</strong></a>&nbsp;
                   <a href="https://github.com/vllm-project/vllm/pull/47131"><strong>[Code]</strong></a>&nbsp;
                   <a href="https://angelslim.readthedocs.io/zh-cn/latest/dcut.html"><strong>[Docs]</strong></a>
                 </p>
-                <p class="paper-note"><br><strong>🚀 Followed by DeepSeek <a href="https://arxiv.org/pdf/2607.05147"><strong>DSpark</strong></a>!</strong></p>
+                <p class="paper-note"><strong>Followed by DeepSeek <a href="https://arxiv.org/pdf/2607.05147"><strong>DSpark</strong></a>!</strong></p>
               </div>
             </div>
 
             <div class="paper-box">
               <div class="paper-box-image">
                 <div>
-                  <div class="badge">COLM 2026 Workshop</div>
                   <img src="images/kvshot.png" alt="KVShot illustration" width="100%">
                 </div>
               </div>
               <div class="paper-box-text">
+                <p class="paper-venue">COLM 2026 ER Workshop · Spotlight</p>
                 <p><strong>When Hidden States Drift: Can KV Caches Rescue Long-Range Speculative Decoding?</strong></p>
-                <p><strong>Tianyu Liu</strong>, <a href="https://scholar.google.com/citations?user=kYveqcQAAAAJ&hl=en&oi=ao">Yuhao Shen</a>, Xinyi Hu, Baolin Zhang, Hengxin Zhang, Jun Dai, Jun Zhang<sup>†</sup>, Shuang Ge<sup>†</sup>, Lei Chen, Yue Li, Mingcheng Wan</p>
+                <p><strong>Tianyu Liu</strong>, <a href="https://scholar.google.com/citations?user=kYveqcQAAAAJ&hl=en&oi=ao">Yuhao Shen</a>, <a href="https://scholar.google.com/citations?user=JBa6BUUAAAAJ&amp;hl=zh-CN">Xinyi Hu</a>, Baolin Zhang, Hengxin Zhang, Jun Dai, <a href="https://scholar.google.com/citations?user=JSvMHnEAAAAJ&amp;hl=en">Jun Zhang</a><sup>†</sup>, Shuang Ge<sup>†</sup>, Lei Chen, Yue Li, Mingcheng Wan</p>
                 <p>
                   <a href="https://arxiv.org/pdf/2604.26412"><strong>[Paper]</strong></a>
                 </p>
@@ -168,13 +163,13 @@
             <div class="paper-box">
               <div class="paper-box-image">
                 <div>
-                  <div class="badge">Preprint</div>
                   <img src="images/talon.png" alt="TALON illustration" width="100%">
                 </div>
               </div>
               <div class="paper-box-text">
+                <p class="paper-venue">NeurIPS 2026</p>
                 <p><strong>TALON: Confidence-Aware Speculative Decoding with Adaptive Token Trees</strong></p>
-                <p><strong>Tianyu Liu</strong><sup>*</sup>, <a href="https://shiliu-egg.github.io/">Qitan Lv</a><sup>*</sup>, <a href="https://scholar.google.com/citations?user=kYveqcQAAAAJ&hl=en&oi=ao">Yuhao Shen</a>, <a href="https://jimmysuen.github.io/">Xiao Sun</a><sup>†</sup>, <a href="http://staff.ustc.edu.cn/~xysun720/">Xiaoyan Sun</a></p>
+                <p><strong>Tianyu Liu</strong><sup>*</sup>, <a href="https://shiliu-egg.github.io/">Qitan Lv</a><sup>*</sup>, <a href="https://scholar.google.com/citations?user=kYveqcQAAAAJ&hl=en&oi=ao">Yuhao Shen</a>, <a href="https://scholar.google.com/citations?user=JSvMHnEAAAAJ&amp;hl=en">Jun Zhang</a>, <a href="https://jimmysuen.github.io/">Xiao Sun</a><sup>†</sup>, <a href="http://staff.ustc.edu.cn/~xysun720/">Xiaoyan Sun</a></p>
                 <p>
                   <a href="https://arxiv.org/pdf/2601.07353"><strong>[Paper]</strong></a>
                 </p>
@@ -184,11 +179,11 @@
             <div class="paper-box">
               <div class="paper-box-image">
                 <div>
-                  <div class="badge">ACL 2026 Findings</div>
                   <img src="images/logitspec.png" alt="LogitSpec illustration" width="100%">
                 </div>
               </div>
               <div class="paper-box-text">
+                <p class="paper-venue">ACL 2026 Findings</p>
                 <p><strong><em>LogitSpec</em>: Accelerating Retrieval-based Speculative Decoding via Next Next Token Speculation</strong></p>
                 <p><strong>Tianyu Liu</strong><sup>*</sup>, <a href="https://shiliu-egg.github.io/">Qitan Lv</a><sup>*</sup>, <a href="https://github.com/LiHaoHN">Hao Li</a>, Xing Gao, <a href="https://jimmysuen.github.io/">Xiao Sun</a><sup>†</sup>, <a href="http://staff.ustc.edu.cn/~xysun720/">Xiaoyan Sun</a></p>
                 <p>
@@ -201,11 +196,11 @@
             <div class="paper-box">
               <div class="paper-box-image">
                 <div>
-                  <div class="badge">NeurIPS 2023</div>
                   <img src="images/rest.png" alt="REST illustration" width="100%">
                 </div>
               </div>
               <div class="paper-box-text">
+                <p class="paper-venue">NeurIPS 2023</p>
                 <p><strong>Learning Rule-Induced Subgraph Representations for Inductive Relation Prediction</strong></p>
                 <p><strong>Tianyu Liu</strong>, <a href="https://shiliu-egg.github.io/">Qitan Lv</a>, Jie Wang<sup>†</sup>, Shuling Yang, Hanzhu Chen</p>
                 <p>
@@ -215,7 +210,7 @@
               </div>
             </div>
 
-            <h1 id="other-publications">🗂 Other Publications</h1>
+            <h1 id="other-publications">Other Publications</h1>
             <div class="paper-list-item">
               <p><span class="paper-badge">Tech Report</span> <strong>AngelSpec: Towards Real-World High Performance Inference with Speculative Decoding</strong></p>
               <p>Hong Liu, Rui Cen, Junhan Shi, Guangshuo Qin, Jiebin Zhang, <strong>Tianyu Liu</strong>, Runzhi Fan, Guoliang Zhao, Ruobing Xie, Kai Zhang, Song Liu, Guanghua Yu<sup>†</sup>, Jianchen Zhu</p>
@@ -227,16 +222,17 @@
             </div>
 
             <div class="paper-list-item">
-              <p><span class="paper-badge">arXiv 2026</span> <strong>Draft Less, Retrieve More: Hybrid Tree Construction for Speculative Decoding</strong></p>
-              <p><a href="https://scholar.google.com/citations?user=kYveqcQAAAAJ&hl=en&oi=ao">Yuhao Shen</a>, <strong>Tianyu Liu</strong>, Xinyi Hu, Quan Kong, Baolin Zhang, Jun Dai, Jun Zhang<sup>†</sup>, Shuang Ge, Lei Chen, Yue Li, Mingcheng Wan, <a href="https://cwang-zju.github.io/">Cong Wang</a><sup>†</sup></p>
+              <p><span class="paper-badge">arXiv 2026</span> <strong>Graft — Draft Less, Retrieve More: Hybrid Tree Construction for Speculative Decoding</strong></p>
+              <p><a href="https://scholar.google.com/citations?user=kYveqcQAAAAJ&hl=en&oi=ao">Yuhao Shen</a><sup>‡</sup>, <strong>Tianyu Liu</strong><sup>‡</sup>, <a href="https://scholar.google.com/citations?user=JBa6BUUAAAAJ&amp;hl=zh-CN">Xinyi Hu</a><sup>‡</sup>, Quan Kong, Baolin Zhang, Jun Dai, <a href="https://scholar.google.com/citations?user=JSvMHnEAAAAJ&amp;hl=en">Jun Zhang</a><sup>†</sup>, Shuang Ge, Lei Chen, Yue Li, Mingcheng Wan, <a href="https://cwang-zju.github.io/">Cong Wang</a><sup>†</sup></p>
+              <p><sup>‡</sup>: core contribution</p>
               <p>
                 <a href="https://arxiv.org/pdf/2605.20104"><strong>[Paper]</strong></a>
               </p>
             </div>
 
             <div class="paper-list-item">
-              <p><span class="paper-badge">arXiv 2026</span> <strong>HIPPO: Accelerating Video Large Language Models Inference via Holistic-aware Parallel Speculative Decoding</strong></p>
-              <p><a href="https://shiliu-egg.github.io/">Qitan Lv</a><sup>*</sup>, <strong>Tianyu Liu</strong><sup>*</sup>, Wen Wu, Xuenan Xu, <a href="https://web.ee.tsinghua.edu.cn/zhoubowen/en/index.htm">Bowen Zhou</a>, <a href="https://faculty.ustc.edu.cn/wufeng1/zh_CN/index.htm">Feng Wu</a>, <a href="https://mi.eng.cam.ac.uk/~cz277/#pubs">Chao Zhang</a></p>
+              <p><span class="paper-badge">EMNLP 2026 Main</span> <strong>HIPPO: Accelerating Video Large Language Models Inference via Holistic-aware Parallel Speculative Decoding</strong></p>
+              <p><a href="https://shiliu-egg.github.io/">Qitan Lv</a><sup>*</sup>, <strong>Tianyu Liu</strong><sup>*</sup>, Wen Wu, Xuenan Xu, <a href="https://web.ee.tsinghua.edu.cn/zhoubowen/en/index.htm">Bowen Zhou</a>, <a href="https://faculty.ustc.edu.cn/wufeng1/zh_CN/index.htm">Feng Wu</a>, <a href="https://mi.eng.cam.ac.uk/~cz277/#pubs">Chao Zhang</a><sup>†</sup></p>
               <p>
                 <a href="https://arxiv.org/abs/2601.08273"><strong>[Paper]</strong></a>
               </p>
@@ -244,7 +240,7 @@
 
             <div class="paper-list-item">
               <p><span class="paper-badge">arXiv 2026</span> <strong>KALE: Enhancing Knowledge Manipulation in Large Language Models via Knowledge-aware Learning</strong></p>
-              <p><a href="https://shiliu-egg.github.io/">Qitan Lv</a><sup>*</sup>, <strong>Tianyu Liu</strong><sup>*</sup>, <a href="https://qiaoshengzhang.github.io/">Qiaosheng Zhang</a>, <a href="https://sites.google.com/view/xingchengxu">Xingcheng Xu</a>, <a href="https://causallu.com/bio/">Chaochao Lu</a></p>
+              <p><a href="https://shiliu-egg.github.io/">Qitan Lv</a><sup>*</sup>, <strong>Tianyu Liu</strong><sup>*</sup>, <a href="https://qiaoshengzhang.github.io/">Qiaosheng Zhang</a><sup>†</sup>, <a href="https://sites.google.com/view/xingchengxu">Xingcheng Xu</a><sup>†</sup>, <a href="https://causallu.com/bio/">Chaochao Lu</a></p>
               <p>
                 <a href="https://arxiv.org/abs/2601.07430"><strong>[Paper]</strong></a>
               </p>
@@ -260,7 +256,7 @@
             </div>
 
             <div class="paper-list-item">
-              <p><span class="paper-badge">ICLR 2026</span> <strong>Speculative Decoding via Hybrid Drafting and Rollback-Aware Branch Parallelism</strong></p>
+              <p><span class="paper-badge">ICLR 2026</span> <strong>SpecBranch: Speculative Decoding via Hybrid Drafting and Rollback-Aware Branch Parallelism</strong></p>
               <p><a href="https://scholar.google.com/citations?user=kYveqcQAAAAJ&hl=en&oi=ao">Yuhao Shen</a>, <a href="https://j1shen.github.io/">Junyi Shen</a>, Quan Kong, <strong>Tianyu Liu</strong>, <a href="https://yao.lu/">Yao Lu</a>, <a href="https://cwang-zju.github.io/">Cong Wang</a></p>
               <p>
                 <a href="https://arxiv.org/abs/2506.01979"><strong>[Paper]</strong></a>&nbsp;
@@ -276,15 +272,15 @@
               </p>
             </div>
 
-            <h1 id="educations">📖 Education</h1>
+            <h1 id="educations">Education</h1>
             <ul>
               <li><em>2022.09 - Present</em>, Ph.D. in Information and Communication Engineering, University of Science and Technology of China.</li>
               <li><em>2018.09 - 2022.06</em>, B.Eng. in Computer Science and Technology, Central University of Finance and Economics.</li>
             </ul>
 
-            <h1 id="services">🖥️ Academic Service</h1>
+            <h1 id="services">Academic Service</h1>
             <ul>
-              <li>Conference reviewer for ICLR'25, ICLR'26, WWW'25, NeurIPS'25, NeurIPS'26.</li>
+              <li>Conference reviewer for ICLR'25, ICLR'26, ICLR'27, WWW'25, NeurIPS'25, NeurIPS'26.</li>
             </ul>
           </section>
         </div>
@@ -292,9 +288,8 @@
     </div>
 
     <footer class="site-footer">
-      <p>&copy; 2026 Tianyu Liu (刘天宇) &middot; Last updated August 2026</p>
+      <p>&copy; 2026 Tianyu Liu (刘天宇) &middot; Last updated September 2026</p>
     </footer>
 
-    <script src="assets/js/main.min.js"></script>
   </body>
 </html>

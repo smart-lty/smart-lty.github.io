@@ -10,15 +10,17 @@
     <meta property="og:description" content="Joint Ph.D. student at USTC and Shanghai AI Laboratory working on efficient inference for large language models.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://smart-lty.github.io/">
-    <meta property="og:image" content="https://smart-lty.github.io/images/luca.jpg">
-    <meta property="og:image:alt" content="Tianyu Liu (刘天宇)">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="https://smart-lty.github.io/images/og-card.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Tianyu Liu (刘天宇): Ph.D. student at USTC and Shanghai AI Laboratory working on efficient LLM inference and speculative decoding">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://smart-lty.github.io/">
     <script>
       document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
     </script>
     <link rel="preload" href="assets/fonts/anthropic-sans.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="assets/css/main.css?v=20261012-icons">
+    <link rel="stylesheet" href="assets/css/main.css?v=20261012-demo">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -29,6 +31,8 @@
     <meta name="color-scheme" content="light dark">
     <base target="_blank">
     <script src="assets/js/bibtex.js?v=20260929-bibtex1" defer></script>
+    <script src="assets/js/specdemo.js?v=20261012" defer></script>
+    <script src="assets/js/hello.js?v=20261012" defer></script>
   </head>
   <body>
     <!--[if lt IE 9]>
@@ -81,6 +85,19 @@
             <h1 class="intro-title" id="about-me">About me</h1>
             <p>Hi there! I am Tianyu Liu (刘天宇), a joint Ph.D. student at USTC and Shanghai AI Laboratory, supervised by <a href="https://jimmysuen.github.io/">Xiao Sun</a>. My research focuses on <strong>efficient inference for LLMs</strong>, especially <em>speculative decoding</em>. I proposed <a href="https://arxiv.org/pdf/2408.11850">PEARL</a> (ICLR 2025), the first parallel speculative decoding framework, and <a href="https://arxiv.org/pdf/2607.14647">D-cut</a>, which now ships in Tencent's open-source <a href="https://github.com/Tencent/AngelSlim">AngelSlim</a> and has been followed up by DeepSeek's DSpark.</p>
             <p>I expect to graduate in 2027 and am on the job market for roles in efficient LLM inference and AI systems. I am also open to research collaborations on related topics. Feel free to reach out at <a href="mailto:tianyu_liu@mail.ustc.edu.cn">tianyu_liu@mail.ustc.edu.cn</a>.</p>
+
+            <figure class="spec-demo" aria-label="Animation comparing autoregressive decoding, which takes 14 large-model passes to write a sentence, with speculative decoding, which takes 4.">
+              <div class="spec-row" data-mode="ar" aria-hidden="true">
+                <div class="spec-head"><span class="spec-label">Autoregressive</span><span class="spec-count"><b>0</b> passes</span></div>
+                <div class="spec-tokens"></div>
+              </div>
+              <div class="spec-row" data-mode="sd" aria-hidden="true">
+                <div class="spec-head"><span class="spec-label">Speculative decoding</span><span class="spec-count"><b>0</b> passes</span></div>
+                <div class="spec-tokens"></div>
+              </div>
+              <div class="spec-legend" aria-hidden="true"><span><i class="tok is-draft"></i>draft guess</span><span><i class="tok is-accepted"></i>accepted</span><span><i class="tok is-rejected"></i>rejected</span><span><i class="tok is-target"></i>from the large model</span></div>
+              <figcaption>A small draft model guesses several tokens ahead, and the large model checks them all in one pass. <a href="https://arxiv.org/pdf/2408.11850">PEARL</a> goes further by drafting and verifying in parallel.</figcaption>
+            </figure>
 
             <h1 id="news">News</h1>
             <ul class="news-list">
